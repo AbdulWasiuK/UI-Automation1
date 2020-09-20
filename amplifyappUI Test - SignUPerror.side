@@ -1,0 +1,112 @@
+{
+  "id": "6890ce02-e651-40bf-be1b-acb0b66e2dc5",
+  "version": "2.0",
+  "name": "amplifyappUI Test - SignUPerror",
+  "url": "https://dev.d2rxvhrryr2bkn.amplifyapp.com",
+  "tests": [{
+    "id": "fb49ee4b-307f-4fc4-b5f6-d684b3e633fb",
+    "name": "amplifyappUITest - signUPerror",
+    "commands": [{
+      "id": "52ebbb6c-93b1-4673-a321-318c6fc72870",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a67d750e-59ca-4ab8-80e4-92e3c61d2c2c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1412x699",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02af893e-c139-48c2-a1ea-a3acf352731b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.landing-button",
+      "targets": [
+        ["css=.landing-button", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/div[2]/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Get started')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f17f49eb-5e42-4b9e-af5c-c0f2146de2f7",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/div[2]/div/div/div/div[2]/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e040d7d7-1760-4aed-ac98-a53bb61723e0",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/div[2]/div/div/div/div[2]/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "admin125"
+    }, {
+      "id": "ef89307a-16d6-4d3b-876c-0cf46324b50e",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/div[2]/div/div/div/div[2]/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ayo@mailinator.com"
+    }, {
+      "id": "8892a299-f0f6-42df-beaf-c0d5939a87b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/div[2]/div/div/div/div[2]/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5abbabbb-5616-400b-8380-ebd7dbfc2b9c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert__content > p",
+      "targets": [
+        ["css=.alert__content > p", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/div[2]/div/div/div/div[2]/div/div/form/div[4]/div/div/p", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/p", "xpath:position"]
+      ],
+      "value": "Login Failed: Invalid username. Username must contain 4 or more characters and can only contain letters, numbers and underscore"
+    }]
+  }],
+  "suites": [{
+    "id": "3252f883-835d-419e-b234-5014ec3d0096",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fb49ee4b-307f-4fc4-b5f6-d684b3e633fb"]
+  }],
+  "urls": ["https://dev.d2rxvhrryr2bkn.amplifyapp.com/"],
+  "plugins": []
+}
